@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import LandingPage from '../views/LandingPage';
+import '../styles/styles.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        Hello world!
-      </div>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Route exact path="/" component={LandingPage} />
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
