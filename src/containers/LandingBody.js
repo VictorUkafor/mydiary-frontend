@@ -5,7 +5,7 @@ import man from '../assets/man1.png';
 import landingLogo from '../assets/landing-logo.png';
 
 
-class LandingBody extends Component {
+export class LandingBody extends Component {
   firstButton() {
     const { user } = this.props;
     if (user) {

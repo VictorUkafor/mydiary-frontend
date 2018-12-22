@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from '../assets/logo.png';
 
-class Header extends Component {
+export class Header extends Component {
   redirectToIndex = () => {
     const { user, history } = this.props;
     if (user) {
