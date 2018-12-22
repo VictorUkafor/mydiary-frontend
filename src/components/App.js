@@ -6,7 +6,7 @@ import '../styles/styles.scss';
 const App = () => (
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={LandingPage} />
+      <Route exact path="/" render={(props) => <LandingPage {...props} />} />
     </div>
   </BrowserRouter>
 );

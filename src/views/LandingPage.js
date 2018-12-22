@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Landing from '../components/Landing';
+import LandingBody from '../containers/LandingBody';
 
 const LandingPage = (props) => (
   <div>
     <Layout {...props}>
-      <Landing />
+      <LandingBody />
     </Layout>
   </div>
 );
