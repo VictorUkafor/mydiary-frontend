@@ -22,7 +22,9 @@ module.exports = {
         experimentalObjectRestSpread: true,
         jsx: true,
       },
-      sourceType: 'module',
+      'ecmaVersion': 6,
+      "sourceType": "module",
+      'allowImportExportEverywhere': true  
     },
     plugins: ['react'],
     rules: {
