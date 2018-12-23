@@ -17,9 +17,9 @@ export class LandingBody extends Component {
   landingButton(authLink, authMessage, defaultLink, defaultMessage) {
     const { user } = this.props;
     if (user) {
-      this.linking(authLink, authMessage);
+      return this.linking(authLink, authMessage);
     }
-    this.linking(defaultLink, defaultMessage);
+    return this.linking(defaultLink, defaultMessage);
   }
 
   render() {
