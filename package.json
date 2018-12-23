@@ -1,31 +1,41 @@
 {
   "name": "my-diary-frontend",
   "version": "0.1.0",
+  "description": "An online platform for taking notes, thoughts and ideas",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-airbnb": "^3.2.0",
+    "enzyme": "^3.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "kleur": "^3.0.1",
+    "moxios": "^0.4.0",
+    "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "axios": "^0.18.0",
-    "cloudinary": "^1.11.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "history": "^4.7.2",
-    "moment": "^2.22.2",
-    "node-sass": "^4.9.4",
-    "react-redux": "^5.1.0",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-test-renderer": "^16.7.0",
+    "react-testing-library": "^5.4.2",
     "redux": "^4.0.1",
-    "redux-devtools-extension": "^2.13.5",
-    "redux-thunk": "^2.3.0"
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.3",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "sinon": "^7.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "test-coverage": "react-scripts test --coverage",
     "test-coverage-watch": "react-scripts test --coverage --watch",
+    "eject": "react-scripts eject",
     "lint": "node_modules/.bin/eslint --fix ./"
   },
   "eslintConfig": {
@@ -37,22 +47,14 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "enzyme-to-json": "^3.3.4",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "moxios": "^0.4.0",
-    "react-test-renderer": "^16.6.0",
-    "redux-mock-store": "^1.5.3",
-    "sinon": "^7.1.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorUkafor/mydiary-frontend.git"
   },
-  "jest": {
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
-  }
+  "author": "Victor Ukafor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VictorUkafor/mydiary-frontend/issues"
+  },
+  "homepage": "https://github.com/VictorUkafor/mydiary-frontend#readme"
 }
