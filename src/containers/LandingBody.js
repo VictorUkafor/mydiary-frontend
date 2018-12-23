@@ -6,36 +6,20 @@ import landingLogo from '../assets/landing-logo.png';
 
 
 export class LandingBody extends Component {
-  firstButton() {
-    const { user } = this.props;
-    if (user) {
-      return (
-        <Link to="/add-entry">
-          <button className="direct" type="button">Add an entry</button>
-        </Link>
-      );
-    }
+  linking(link, message) {
     return (
-      <Link to="/login">
-        <button className="direct" type="button">Have an account? Sign In</button>
+      <Link to={`/${link}`}>
+        <button className="direct" type="button">{message}</button>
       </Link>
     );
   }
 
-  secondButton() {
+  landingButton(authLink, authMessage, defaultLink, defaultMessage) {
     const { user } = this.props;
     if (user) {
-      return (
-        <Link to="/entries">
-          <button className="direct" type="button">View all entries</button>
-        </Link>
-      );
+      this.linking(authLink, authMessage);
     }
-    return (
-      <Link to="/signup">
-        <button className="direct" type="button">You don&apos;t? Sign up today!</button>
-      </Link>
-    );
+    this.linking(defaultLink, defaultMessage);
   }
 
   render() {
@@ -52,8 +36,8 @@ export class LandingBody extends Component {
           Pen it down on <span className="x-h1">MyDiary</span> now
             </h1>
             <div className="d-buttons">
-              {this.firstButton()}
-              {this.secondButton()}
+              {this.landingButton('add-entry', 'Add an entry', 'login', 'Have an account? Sign In')}
+              {this.landingButton('entries', 'View all entries', 'signup', 'You don\'t? Sign up today!')}
             </div>
           </div>
         </div>
