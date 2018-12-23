@@ -50,3 +50,4 @@ module.exports = {
       'jsx-a11y/label-has-for': [ 'error', { 'required': { 'some': [ 'nesting', 'id'  ]} }]
     },
   };
+
