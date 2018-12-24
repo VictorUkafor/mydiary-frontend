@@ -11,6 +11,16 @@ export class Header extends Component {
     return history.push('/');
   }
 
+  navigation = () => {
+    const { page } = this.props;
+    switch (page) {
+      case 'signup':
+        return (<li><button type="button" className="sign-in">Sign In</button></li>);
+      default:
+        return false;
+    }
+  }
+
   render() {
     return (
       <header>
@@ -20,6 +30,9 @@ export class Header extends Component {
         My<span className="text2">Diary</span>
           </h1>
         </div>
+        <ul className="side-button">
+          {this.navigation()}
+        </ul>
       </header>
     );
   }
