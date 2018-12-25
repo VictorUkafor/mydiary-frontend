@@ -47,7 +47,7 @@ export class LandingBody extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  user: state.user,
+  user: state.auth.authenticated,
 });
 
 export default connect(mapStateToProps)(LandingBody);

@@ -39,7 +39,7 @@ export class Header extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  user: state.user,
+  user: state.auth.authenticated,
 });
 
 export default connect(mapStateToProps)(Header);
