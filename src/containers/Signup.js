@@ -63,7 +63,7 @@ export class Signup extends Component {
       photograph: photograph.trim(),
     };
 
-  
+
     this.setState({ error: validationError });
 
     // processes user sign up when validation rules
@@ -71,8 +71,7 @@ export class Signup extends Component {
     if (!validationError.status) {
       signup(body, () => history.push('/login'));
       this.setState(initialState);
-    } 
-    console.log(validationError)
+    }
   }
 
 
@@ -80,7 +79,6 @@ export class Signup extends Component {
     const {
       firstName, lastName, email, password, confirmPassword, photograph, error,
     } = this.state;
-    console.log(error);
     return (
       <div className="body">
         <h1 className="page-header">Sign Up Today</h1>

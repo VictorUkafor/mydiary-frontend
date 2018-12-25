@@ -5,7 +5,7 @@ import Signup from '../containers/Signup';
 const LandingPage = (props) => (
   <div>
     <Layout page="signup" {...props}>
-      <Signup />
+      <Signup {...props} />
     </Layout>
   </div>
 );

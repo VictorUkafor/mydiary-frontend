@@ -14,6 +14,15 @@ export class Header extends Component {
   navigation = () => {
     const { page } = this.props;
     switch (page) {
+      case 'landing':
+        return (
+          <div>
+            <li><button type="button" className="sign-in">All Entries</button></li>
+            <li><button type="button" className="sign-in">Add an Entry</button></li>
+            <li><button type="button" className="sign-in my-profile-button">My Profile</button></li>
+            <li><button type="button" className="sign-in my-profile-button">Log Out</button></li>
+          </div>
+        );
       case 'signup':
         return (<li><button type="button" className="sign-in">Sign In</button></li>);
       default:
