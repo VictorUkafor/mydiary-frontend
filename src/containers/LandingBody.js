@@ -5,7 +5,7 @@ import man from '../assets/man1.png';
 import landingLogo from '../assets/landing-logo.png';
 
 
-export class LandingBody extends Component {
+class LandingBody extends Component {
   linking(link, message) {
     return (
       <Link to={`/${link}`}>

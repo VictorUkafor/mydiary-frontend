@@ -2,7 +2,7 @@ import React from 'react';
 import man from '../assets/man1.png';
 import landingLogo from '../assets/landing-logo.png';
 
-const Landing = () => (
+export const Landing = () => (
   <div className="body">
     <div className="landing">
       <div className="image-ad">

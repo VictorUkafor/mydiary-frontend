@@ -24,7 +24,7 @@ const initialState = {
   },
 };
 
-export class Signup extends Component {
+class Signup extends Component {
   state = initialState;
 
   handleChange = (event) => {

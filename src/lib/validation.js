@@ -2,7 +2,8 @@ const validateAuth = (fields, fieldNames) => {
   const error = { status: false };
 
   Object.keys(fieldNames).forEach((field) => {
-    if (field !== 'photograph' && (!fields[field] || fields[field].trim() === '')) {
+    if (field !== 'photograph'
+    && (!fields[field] || fields[field].trim() === '')) {
       error[field] = `${fieldNames[field]} must be filled`;
       error.status = true;
     }
@@ -20,7 +21,8 @@ const validateAuth = (fields, fieldNames) => {
   // checks if passwords match
   const alphaNumberic = /((^[0-9]+[a-z]+)|(^[a-z]+[0-9]+))+[0-9a-z]+$/i;
   if (fields.password) {
-    if (fields.password.length < 5 && !alphaNumberic.test(fields.password.trim())) {
+    if (fields.password.length < 5
+       && !alphaNumberic.test(fields.password.trim())) {
       error.password = 'Your password must be more than 4 characters.';
       error.status = true;
     }
