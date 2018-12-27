@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => (
+export const Footer = () => (
   <footer>
     <div className="p copyright">
                 Copyright (c) 2018 &nbsp; MyDiary &nbsp; All Rights Reserved &nbsp; |  &nbsp;

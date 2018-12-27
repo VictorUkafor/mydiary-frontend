@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 
 afterEach(cleanup);
 
-test('<Footer/>', () => {
+test('<Footer />', () => {
   const { container } = render(<Footer />);
   expect(container.firstChild).toMatchSnapshot();
 });

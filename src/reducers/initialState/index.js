@@ -1,5 +1,7 @@
 const initialState = {
-  user: null,
+  authenticated: false,
+  successMessage: '',
+  errorMessage: '',
 };
 
 
