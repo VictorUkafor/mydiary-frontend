@@ -6,10 +6,20 @@ export default (state = initialState, action) => {
     case types.SIGNUP_USER:
       return {
         ...state,
-        authenticated: true,
         successMessage: action.payload,
       };
     case types.SIGNUP_USER_ERROR:
+      return {
+        ...state,
+        errorMessage: action.payload,
+      };
+    case types.LOGIN_USER:
+      return {
+        ...state,
+        authenticated: true,
+        successMessage: action.payload,
+      };
+    case types.LOGIN_USER_ERROR:
       return {
         ...state,
         errorMessage: action.payload,
