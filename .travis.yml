@@ -15,9 +15,11 @@ before_script:
   - ./cc-test-reporter before-build
   - npm install
 script:
-  - nyc --reporter=lcov npm test
+  - npm test -- --coverage
+  - npm run build
 after_script:
-  - npm run test-coverage
+  - npm run coverage
+   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
   - codeclimate-test-reporter < ./coverage/Icov.info 
 notifications:

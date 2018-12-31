@@ -25,6 +25,8 @@ class Header extends Component {
         );
       case 'signup':
         return (<li><button type="button" className="sign-in">Sign In</button></li>);
+      case 'login':
+        return (<li><button type="button" className="sign-in">Login</button></li>);
       default:
         return false;
     }
