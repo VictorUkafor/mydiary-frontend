@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Landing/> 1`] = `
+<div
+  class="body"
+>
+  <div
+    class="landing"
+  >
+    <div
+      class="image-ad"
+    >
+      <img
+        alt=""
+        src="man1.png"
+      />
+    </div>
+    <div
+      class="add"
+    >
+      <img
+        alt=""
+        src="landing-logo.png"
+      />
+      <h1
+        class="add-h1"
+      >
+        You've got any idea, thought or plan!
+        <br />
+        Pen it down on 
+        <span
+          class="x-h1"
+        >
+          MyDiary
+        </span>
+         now
+      </h1>
+      <div
+        class="d-buttons"
+      >
+        <button
+          class="direct"
+          type="button"
+        >
+          Have an account? Sign In
+        </button>
+        <button
+          class="direct"
+          type="button"
+        >
+          You don't? Sign up today!
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

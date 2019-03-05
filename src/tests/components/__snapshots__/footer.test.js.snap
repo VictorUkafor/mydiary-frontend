@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> 1`] = `
+<footer>
+  <div
+    class="p copyright"
+  >
+    Copyright (c) 2018   MyDiary   All Rights Reserved   |    Designed & Developed by Victor Ukafor
+  </div>
+</footer>
+`;

@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "7"
+addons:
+    code_climate: 
+        repo_token: 
+        secure: 737c3d9d862370f64f6d918a3bd1f3ed0f1350e32937457e1d43f09e418bc43c
+env:
+  global:
+    - CC_TEST_REPORTER_ID=737c3d9d862370f64f6d918a3bd1f3ed0f1350e32937457e1d43f09e418bc43c
+before_script:
+  - npm i nyc global
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+  - npm install
+script:
+  - npm test -- --coverage
+  - npm run build
+after_script:
+  - npm run coverage
+   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - codeclimate-test-reporter < ./coverage/Icov.info 
+notifications:
+    email: false
