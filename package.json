@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "An online platform for taking notes, thoughts and ideas",
   "private": true,
-  "proxy": "https://deploy-challenge3-to-heroku.herokuapp.com/api/v1",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-preset-airbnb": "^3.2.0",
+    "dotenv": "^6.2.0",
     "enzyme": "^3.8.0",
     "enzyme-to-json": "^3.3.5",
     "eslint-config-airbnb": "^17.1.0",
