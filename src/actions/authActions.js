@@ -21,7 +21,7 @@ export const signupUser = (body, callback) => async (dispatch) => {
 
 export const loginUser = (body, callback) => async (dispatch) => {
   try {
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login', body);
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, body);
     localStorage.setItem('token', response.data.token);
     dispatch({
       type: types.LOGIN_USER,
